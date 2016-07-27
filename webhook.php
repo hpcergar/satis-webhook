@@ -13,8 +13,6 @@ if($unattended){
 use Symfony\Component\Process\Process;
 use Symfony\Component\Yaml\Yaml;
 
-header('Content-Type: text/html; charset=utf-8');
-
 if (!file_exists(__DIR__.'/config.yml')) {
     echo "Please, define your satis configuration in a config.yml file.\nYou can use the config.yml.dist as a template.";
     exit(-1);
